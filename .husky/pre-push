@@ -3,3 +3,4 @@
 . "$(dirname $0)/helpers/prevent_pushing_to_main.sh"
 
 prevent_pushing_to_main
+
