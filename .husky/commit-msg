@@ -1,4 +1,6 @@
-#!/bin/sh
 . "$(dirname "$0")/_/husky.sh"
+. "$(dirname $0)/helpers/prevent_pushing_to_main.sh"
+. "$(dirname $0)/helpers/lint_staged.sh"
 
-cd "$(dirname "$0")/.." && npx --no -- commitlint --edit $1
+prevent_pushing_to_main
+lint_staged_files
