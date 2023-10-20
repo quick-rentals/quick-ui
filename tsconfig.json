@@ -1,0 +1,24 @@
+{
+    "compilerOptions": {
+      "target": "ESNext",
+      "module": "ESNext",
+      "strict": true,
+      "jsx": "react",
+      "esModuleInterop": true,
+      "skipLibCheck": true,
+      "forceConsistentCasingInFileNames": true,
+      "noEmit": true, // Set to true if you're not compiling to JavaScript
+      "isolatedModules": true, // Set to true if you're not compiling to JavaScript
+      "resolveJsonModule": true, // Allow importing JSON files
+      "baseUrl": "./src", // Adjust this base URL as needed
+      "paths": {
+        "@/*": ["*"]
+      },
+      "typeRoots": ["./node_modules/@types"],
+      "lib": ["ESNext", "DOM"],
+      "moduleResolution": "node" // Set module resolution to "node"
+    },
+    "include": ["src/**/*.tsx", "src/**/*.ts"],
+    "exclude": ["node_modules"]
+  }
+  
