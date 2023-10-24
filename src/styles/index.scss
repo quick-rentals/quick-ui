@@ -1,11 +1,14 @@
-// 
+//Abstracts
+
+@import "./abstracts/mixins";
+@import "./abstracts/normalize";
 @import "./abstracts/variables";
+@import "./abstracts/root";
 
+@import "./abstracts/theme";
 
-
-
-
-//components scss
 
 @import "./components/button";
 
+//Base
+@import "./base/base";

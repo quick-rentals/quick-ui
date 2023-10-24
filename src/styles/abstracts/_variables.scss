@@ -1,0 +1,259 @@
+// Primary Colors
+$techzia-ui-primary-800: 45, 54, 212;   // Deep blue, typically used for primary actions
+$techzia-ui-primary-600: 49, 147, 61;   // Bright blue for buttons and key elements
+$techzia-ui-primary-500: 59, 181, 74;  // Main brand color for headings and highlights
+$techzia-ui-primary-100: 235, 236, 254; // Very light blue for accents and backgrounds
+
+// Success Colors
+$techzia-ui-success-800: 16, 113, 84;   // Dark green, representing success
+$techzia-ui-success-600: 18, 128, 92;   // Vibrant green for success notifications
+$techzia-ui-success-500: 38, 142, 108;  // Main color for success elements
+$techzia-ui-success-100: 225, 243, 238; // Light green for success backgrounds
+
+// Error Colors
+$techzia-ui-error-800: 187, 18, 26;    // Dark red, indicating errors
+$techzia-ui-error-600: 201, 37, 45;    // Intense red for error messages
+$techzia-ui-error-500: 215, 55, 63;    // Main color for error indicators
+$techzia-ui-error-100: 254, 236, 240;  // Light red for error backgrounds
+
+// Info Colors
+$techzia-ui-info-800: 9, 90, 186;     // Dark blue for informational messages
+$techzia-ui-info-600: 13, 102, 208;   // Bright blue for info icons
+$techzia-ui-info-500: 20, 115, 230;   // Primary color for informational elements
+$techzia-ui-info-100: 226, 242, 255;  // Very light blue for info backgrounds
+
+// Warning Colors
+$techzia-ui-warning-800: 189, 100, 13;  // Dark orange, used for warnings
+$techzia-ui-warning-600: 203, 111, 16;  // Vibrant orange for warning indicators
+$techzia-ui-warning-500: 218, 123, 17;  // Main color for warning elements
+$techzia-ui-warning-100: 251, 242, 225; // Light orange for warning backgrounds
+
+// Pastel Colors
+$techzia-ui-pastel-silver: 232, 233, 237; // Soft silver for a subtle touch
+$techzia-ui-pastel-red: 255, 229, 229;   // Pastel red for gentle accents
+$techzia-ui-pastel-yellow: 254, 243, 197; // Muted yellow, perfect for highlights
+$techzia-ui-pastel-green: 211, 249, 232;  // Light green, adding a calm feel
+$techzia-ui-pastel-blue: 236, 244, 255;   // Serene blue, great for backgrounds
+$techzia-ui-pastel-purple: 238, 235, 255; // Delicate purple for subtle elements
+$techzia-ui-pastel-pink: 253, 226, 241;   // Soft pink for a gentle touch
+
+// Color Palette
+$techzia-ui-surface-bg: 255, 255, 255; // Background color for the application surface
+
+// Base Colors
+$techzia-ui-white: 255, 255, 255; // Pure white color
+$techzia-ui-black: 18, 18, 18;   // Deep black color
+
+// Gray Shades
+$techzia-ui-gray-800: 31, 31, 31;     // Dark gray, suitable for text
+$techzia-ui-gray-700: 47, 57, 65;     // Subdued gray, used for secondary elements
+$techzia-ui-gray-600: 104, 115, 125;  // Standard gray for content backgrounds
+$techzia-ui-gray-500: 135, 146, 157;  // Mid-gray, commonly used for borders
+$techzia-ui-gray-400: 194, 200, 204;  // Light gray, ideal for subtle elements
+$techzia-ui-gray-300: 216, 220, 222;  // Lighter gray for form fields and dividers
+$techzia-ui-gray-200: 233, 235, 237;  // Very light gray, useful for backgrounds
+$techzia-ui-gray-100: 248, 249, 249;  // Almost white, for extra subtle backgrounds
+
+// Color Map
+$techzia-ui-theme-colors: (
+  // Base Colors
+  "black": $techzia-ui-black,
+  "white": $techzia-ui-white,
+  // Gray Shades
+  "gray-800": $techzia-ui-gray-800,
+  "gray-700": $techzia-ui-gray-700,
+  "gray-600": $techzia-ui-gray-600,
+  "gray-500": $techzia-ui-gray-500,
+  "gray-400": $techzia-ui-gray-400,
+  "gray-300": $techzia-ui-gray-300,
+  "gray-200": $techzia-ui-gray-200,
+  "gray-100": $techzia-ui-gray-100,
+  // Primary Colors
+  "primary-800": $techzia-ui-primary-800,
+  "primary-600": $techzia-ui-primary-600,
+  "primary-500": $techzia-ui-primary-500,
+  "primary-100": $techzia-ui-primary-100,
+  // Success Colors
+  "success-800": $techzia-ui-success-800,
+  "success-600": $techzia-ui-success-600,
+  "success-500": $techzia-ui-success-500,
+  "success-100": $techzia-ui-success-100,
+  // Error Colors
+  "error-800": $techzia-ui-error-800,
+  "error-600": $techzia-ui-error-600,
+  "error-500": $techzia-ui-error-500,
+  "error-100": $techzia-ui-error-100,
+  // Info Colors
+  "info-800": $techzia-ui-info-800,
+  "info-600": $techzia-ui-info-600,
+  "info-500": $techzia-ui-info-500,
+  "info-100": $techzia-ui-info-100,
+  // Warning Colors
+  "warning-800": $techzia-ui-warning-800,
+  "warning-600": $techzia-ui-warning-600,
+  "warning-500": $techzia-ui-warning-500,
+  "warning-100": $techzia-ui-warning-100,
+  // Pastel Colors
+  "pastel-silver": $techzia-ui-pastel-silver,
+  "pastel-red": $techzia-ui-pastel-red,
+  "pastel-yellow": $techzia-ui-pastel-yellow,
+  "pastel-green": $techzia-ui-pastel-green,
+  "pastel-blue": $techzia-ui-pastel-blue,
+  "pastel-purple": $techzia-ui-pastel-purple,
+  "pastel-pink": $techzia-ui-pastel-pink
+);
+
+// Font Weights
+$techzia-ui-font-thin: 100;        // Ultra-light font weight
+$techzia-ui-font-extralight: 200;  // Extra-light font weight
+$techzia-ui-font-light: 300;       // Light font weight
+$techzia-ui-font-normal: 400;      // Standard font weight
+$techzia-ui-font-medium: 500;      // Medium font weight
+$techzia-ui-font-semibold: 600;    // Semi-bold font weight
+$techzia-ui-font-bold: 700;        // Bold font weight
+$techzia-ui-font-extrabold: 800;   // Extra-bold font weight
+$techzia-ui-font-black: 900;      // Ultra-bold font weight
+
+// Font Weight Map
+$techzia-ui-font-weights: (
+  "thin": $techzia-ui-font-thin,
+  "extralight": $techzia-ui-font-extralight,
+  "light": $techzia-ui-font-light,
+  "normal": $techzia-ui-font-normal,
+  "medium": $techzia-ui-font-medium,
+  "semibold": $techzia-ui-font-semibold,
+  "bold": $techzia-ui-font-bold,
+  "extrabold": $techzia-ui-font-extrabold,
+  "black": $techzia-ui-font-black
+);
+
+// Font Sizes
+$techzia-ui-text-xxs: 10px;           // Extra-small text size for tiny elements
+$techzia-ui-text-xs: 12px;            // Small text size for subheadings and small content
+$techzia-ui-text-sm: 14px;            // Standard small text size for most content
+$techzia-ui-text-base: 16px;          // The base text size for general content
+$techzia-ui-text-lg: 18px;            // Large text size for headings and prominent content
+$techzia-ui-text-xl: 20px;            // Extra-large text size for titles and key elements
+$techzia-ui-text-2xl: 24px;           // Very large text size for major headings
+$techzia-ui-text-3xl: 32px;           // Extremely large text size for special emphasis
+$techzia-ui-text-4xl: 48px;           // Gigantic text size for eye-catching elements
+
+// Font Size Map
+$techzia-ui-font-sizes: (
+  "h1": $techzia-ui-text-3xl,   // Heading 1 font size
+  "h2": $techzia-ui-text-2xl,   // Heading 2 font size
+  "h3": $techzia-ui-text-xl,    // Heading 3 font size
+  "h4": $techzia-ui-text-base,  // Heading 4 font size
+  "h5": $techzia-ui-text-sm,    // Heading 5 font size
+  "h6": $techzia-ui-text-xs,    // Heading 6 font size
+  "body1": $techzia-ui-text-base, // Standard body text size
+  "body2": $techzia-ui-text-sm,   // Smaller body text size
+  "body3": $techzia-ui-text-xs,   // Very small body text size
+  "nano": $techzia-ui-text-xxs,   // Nano-sized text for extremely small elements
+  "xxs": $techzia-ui-text-xxs,    // Extra-extra-small text size
+  "xs": $techzia-ui-text-xs,      // Extra-small text size
+  "sm": $techzia-ui-text-sm,      // Small text size
+  "base": $techzia-ui-text-base,  // Base text size
+  "lg": $techzia-ui-text-lg,      // Large text size
+  "xl": $techzia-ui-text-xl,      // Extra-large text size
+  "2xl": $techzia-ui-text-2xl,    // Very large text size
+  "3xl": $techzia-ui-text-3xl,    // Extremely large text size
+  "4xl": $techzia-ui-text-4xl     // Gigantic text size
+);
+
+// Line Heights
+$techzia-ui-leading-none: 1;       // No additional line spacing
+$techzia-ui-leading-tight: 1.25;   // Tight line spacing
+$techzia-ui-leading-snug: 1.375;   // Slightly snug line spacing
+$techzia-ui-leading-normal: 1.5;   // Normal line spacing
+$techzia-ui-leading-relaxed: 1.625; // Relaxed line spacing
+$techzia-ui-leading-loose: 2;      // Loose line spacing
+
+// Line Height Map
+$techzia-ui-line-heights: (
+  "none": $techzia-ui-leading-none,     // No additional line spacing
+  "tight": $techzia-ui-leading-tight,   // Tight line spacing
+  "snug": $techzia-ui-leading-snug,     // Slightly snug line spacing
+  "normal": $techzia-ui-leading-normal, // Normal line spacing
+  "relaxed": $techzia-ui-leading-relaxed, // Relaxed line spacing
+  "loose": $techzia-ui-leading-loose    // Loose line spacing
+);
+
+// Text Transform
+$techzia-ui-text-transform-none: none;             // No text transformation
+$techzia-ui-text-transform-capitalize: capitalize;   // Capitalize all text
+$techzia-ui-text-transform-uppercase: uppercase;     // Uppercase all text
+$techzia-ui-text-transform-lowercase: lowercase;     // Lowercase all text
+$techzia-ui-text-transform-fullwidth: full-width;   // Use full-width text
+$techzia-ui-text-transform-inherit: inherit;       // Inherit text transformation
+$techzia-ui-text-transform-initial: initial;       // Use the initial text transformation
+$techzia-ui-text-transform-revert: revert;         // Revert to the default text transformation
+$techzia-ui-text-transform-unset: unset;           // Unset the text transformation
+
+// Text Transform Map
+$techzia-ui-text-transform: (
+  "none": $techzia-ui-text-transform-none,
+  "capitalize": $techzia-ui-text-transform-capitalize,
+  "uppercase": $techzia-ui-text-transform-uppercase,
+  "lowercase": $techzia-ui-text-transform-lowercase,
+  "full-width": $techzia-ui-text-transform-fullwidth,
+  "inherit": $techzia-ui-text-transform-inherit,
+  "initial": $techzia-ui-text-transform-initial,
+  "revert": $techzia-ui-text-transform-revert,
+  "unset": $techzia-ui-text-transform-unset
+);
+
+// Border Radius
+$techzia-ui-rounded-none: 0;      // No border radius
+$techzia-ui-rounded-sm: 3px;      // Small border radius
+$techzia-ui-rounded: 5px;         // Standard border radius
+$techzia-ui-rounded-md: 6px;      // Medium border radius
+$techzia-ui-rounded-lg: 8px;      // Large border radius
+$techzia-ui-rounded-xl: 12px;     // Extra-large border radius
+$techzia-ui-rounded-full: 999px;  // Fully rounded element
+
+// Transition
+$techzia-ui-transition: all 0.3s linear; // Standard transition timing and ease
+
+// Box Shadows
+$techzia-ui-shadow-xs: 0px 1px 4px -1px rgba(28, 48, 74, 0.12); // Extra-small box shadow
+$techzia-ui-shadow-s: 0px 3px 12px -1px rgba(28, 52, 84, 0.12), 0px 2px 4px -1px rgba(28, 55, 90, 0.08); // Small box shadow
+$techzia-ui-shadow-sm: 0px 3px 12px -1px rgba(28, 52, 84, 0.12), 0px 2px 4px -1px rgba(28, 55, 90, 0.08); // Medium box shadow
+$techzia-ui-shadow-m: 0px 8px 24px -4px rgba(28, 50, 79, 0.12), 0px 2px 6px -1px rgba(28, 55, 90, 0.08); // Large box shadow
+$techzia-ui-shadow-md: 0px 8px 24px -4px rgba(28, 50, 79, 0.12), 0px 2px 6px -1px rgba(28, 55, 90, 0.08); // Medium-large box shadow
+$techzia-ui-shadow-l: 0 8px 24px rgba(140, 149, 159, 0.2), 0px 3px 18px -2px rgba(28, 55, 90, 0.08); // Larger box shadow
+$techzia-ui-shadow-lg: 0 8px 24px rgba(140, 149, 159, 0.2); // Largest box shadow
+
+// Box Shadow Map
+$techzia-ui-shadows: (
+  "xs": $techzia-ui-shadow-xs,   // Extra-small box shadow
+  "s": $techzia-ui-shadow-s,     // Small box shadow
+  "sm": $techzia-ui-shadow-sm,   // Medium box shadow
+  "m": $techzia-ui-shadow-m,     // Large box shadow
+  "md": $techzia-ui-shadow-md,   // Medium-large box shadow
+  "l": $techzia-ui-shadow-l,     // Larger box shadow
+  "lg": $techzia-ui-shadow-lg    // Largest box shadow
+);
+
+// Breakpoints
+$techzia-ui-mob-479: 479px;    // Breakpoint for mobile devices (maximum width)
+$techzia-ui-tab-768: 768px;    // Breakpoint for tablets (maximum width)
+$techzia-ui-tab-1024: 1024px;  // Breakpoint for larger tablets (maximum width)
+$techzia-ui-desk-1200: 1200px; // Breakpoint for desktop screens (maximum width)
+
+// Constants
+$techzia-ui-sidebar-width: 72px;  // Width of the sidebar
+
+$techzia-ui-pane-header-height: 78px;   // Height of pane headers
+$techzia-ui-pane-footer-height: 80px;   // Height of pane footers
+
+$techzia-ui-main-header-height: 80px;   // Height of the main header
+$techzia-ui-main-header-with-breadcrumbs-height: 94px; // Height of the main header with breadcrumbs
+
+$techzia-ui-sub-header-height: 37px;   // Height of subheaders
+$techzia-ui-sub-header-bottom-margin: 20px; // Margin at the bottom of subheaders
+$techzia-ui-pagination-block-height: 88px;  // Height of pagination blocks
+$techzia-ui-table-header-height: 40px;    // Height of table headers
+
+// Z Indexes
+$techzia-ui-modal-z-index: 99999;   // Z-index for modals

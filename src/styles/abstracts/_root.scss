@@ -1,0 +1,65 @@
+:root {
+    // Color Variables
+    @each $color, $value in $techzia-ui-theme-colors {
+      --techzia-ui-#{$color}: #{$value};
+    }
+  
+    // Surface Color Variable
+    --techzia-ui-surface-bg: #{$techzia-ui-surface-bg};
+  
+    // Box Shadow Variables
+    @each $shadow, $value in $techzia-ui-shadows {
+      --techzia-ui-shadow-#{$shadow}: #{$value};
+    }
+  
+    // Font Size Variables
+    @each $size, $value in $techzia-ui-font-sizes {
+      --techzia-ui-text-#{$size}: #{$value};
+    }
+  
+    // Font Weight Variables
+    @each $weight, $value in $techzia-ui-font-weights {
+      --techzia-ui-font-#{$weight}: #{$value};
+    }
+  
+    // Line Height Variables
+    @each $lh, $value in $techzia-ui-line-heights {
+      --techzia-ui-leading-#{$lh}: #{$value};
+    }
+  
+    // Text Transform Variables
+    @each $tt, $value in $techzia-ui-text-transform {
+      --techzia-ui-text-transform-#{$tt}: #{$value};
+    }
+  
+    // Border Radius Variables
+    --techzia-ui-rounded-none: #{$techzia-ui-rounded-none};
+    --techzia-ui-rounded-sm: #{$techzia-ui-rounded-sm};
+    --techzia-ui-rounded: #{$techzia-ui-rounded};
+    --techzia-ui-rounded-md: #{$techzia-ui-rounded-md};
+    --techzia-ui-rounded-lg: #{$techzia-ui-rounded-lg};
+    --techzia-ui-rounded-xl: #{$techzia-ui-rounded-xl};
+    --techzia-ui-rounded-full: #{$techzia-ui-rounded-full};
+  
+    // Transition Variable
+    --techzia-ui-transition: #{$techzia-ui-transition};
+  
+    // Z-Index Variable
+    --techzia-ui-modal-z-index: #{$techzia-ui-modal-z-index};
+  
+    // Layout Constants
+    --techzia-ui-sidebar-width: #{$techzia-ui-sidebar-width};
+  
+    --techzia-ui-pane-header-height: #{$techzia-ui-pane-header-height};
+    --techzia-ui-pane-footer-height: #{$techzia-ui-pane-footer-height};
+  
+    --techzia-ui-main-header-height: #{$techzia-ui-main-header-height};
+    --techzia-ui-main-header-with-breadcrumbs-height: #{$techzia-ui-main-header-with-breadcrumbs-height};
+  
+    --techzia-ui-sub-header-height: #{$techzia-ui-sub-header-height};
+    --techzia-ui-sub-header-bottom-margin: #{$techzia-ui-sub-header-bottom-margin};
+  
+    --techzia-ui-pagination-block-height: #{$techzia-ui-pagination-block-height};
+    --techzia-ui-table-header-height: #{$techzia-ui-table-header-height};
+  }
+  

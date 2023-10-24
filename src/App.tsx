@@ -1,14 +1,14 @@
 
-import "./App.css";
-import { Button, Input } from "./components";
+
+import { Button } from "./components";
 
 function App() {
 
 
   return (
-    <>
-    <Button  label="Small" size="medium" style="primary" />
-    </>
+    // <div className="flex flex-1">
+    <Button label="Search" size="large" style="primary"  />
+    // </div>
   );
 }
 

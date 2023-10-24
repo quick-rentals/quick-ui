@@ -1,6 +1,6 @@
 {
-  "name": "quick-ui-test",
-  "version": "1.0.2",
+  "name": "@techziasln/quick-ui",
+  "version": "1.0.5",
   "type": "module",
   "author": "techziasln",
   "main": "dist/index.umd.js",
@@ -30,7 +30,8 @@
     "prepare": "npm run build",
     "test": "jest"
   },
-  "dependencies": {
+
+  "devDependencies": {
     "classnames": "^2.3.2",
     "framer-motion": "^10.16.4",
     "husky": "^8.0.3",
@@ -38,9 +39,7 @@
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.17.0",
     "string-width": "^6.1.0",
-    "vite-plugin-dts": "^3.6.0"
-  },
-  "devDependencies": {
+    "vite-plugin-dts": "^3.6.0",
     "@babel/preset-env": "^7.23.2",
     "@babel/preset-react": "^7.22.15",
     "@storybook/addon-essentials": "^7.6.0-alpha.0",
@@ -57,16 +56,19 @@
     "@typescript-eslint/eslint-plugin": "^6.0.0",
     "@typescript-eslint/parser": "^6.0.0",
     "@vitejs/plugin-react": "^4.0.3",
+    "autoprefixer": "^10.4.16",
     "babel-jest": "^29.7.0",
     "eslint": "^8.45.0",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.3",
     "jest": "^29.7.0",
     "node-sass": "^9.0.0",
+    "postcss": "^8.4.31",
     "react-test-renderer": "^18.2.0",
     "sass": "^1.69.4",
     "sass-loader": "^13.3.2",
     "storybook": "^7.6.0-alpha.0",
+    "tailwindcss": "^3.3.4",
     "typescript": "^5.0.2",
     "vite": "^4.4.5"
   },

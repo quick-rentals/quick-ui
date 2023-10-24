@@ -1,0 +1,77 @@
+// Custom Scrollbars
+// This mixin defines custom scrollbar styles for webkit-based browsers (e.g., Google Chrome).
+
+@mixin scrollbars($size, $foreground-color: rgb(var(--techzia-ui-gray-300)), $background-color: "transparent") {
+    // For Google Chrome
+    &::-webkit-scrollbar {
+      width: $size;
+      height: $size;
+    }
+  
+    &::-webkit-scrollbar-thumb {
+      background: $foreground-color;
+      border-radius: 50px;
+    }
+  
+    &::-webkit-scrollbar-track {
+      background: $background-color;
+    }
+  }
+  
+  // Media Queries Mixins
+  // These mixins provide convenient media query definitions based on different screen sizes.
+  
+  // Define a media query for desktop screens
+  @mixin viewport($media) {
+    @if $media == desk {
+      @media screen and (min-width: $techzia-ui-desk-1200) {
+        @content;
+      }
+    }
+    // Define a media query for screens up to the maximum tablet size
+    @else if $media == tab-min {
+      @media screen and (max-width: $techzia-ui-tab-1024) {
+        @content;
+      }
+    }
+    // Define a media query for screens within the tablet size range
+    @else if $media == tab-only {
+      @media screen and (min-width: $techzia-ui-tab-768) and (max-width: #{$techzia-ui-tab-1024 - 1}) {
+        @content;
+      }
+    }
+    // Define a media query for mobile screens
+    @else if $media == mob {
+      @media screen and (max-width: #{$techzia-ui-tab-768 - 1}) {
+        @content;
+      }
+    }
+    // Define a media query for extra-small mobile screens
+    @else if $media == xs-mob {
+      @media screen and (max-width: $techzia-ui-mob-479) {
+        @content;
+      }
+    }
+  }
+  
+  // Define a media query with both minimum and maximum screen size constraints
+  @mixin min-max($resMin, $resMax) {
+    @media (min-width: #{$resMin + px}) and (max-width: #{$resMax + px}) {
+      @content;
+    }
+  }
+  
+  // Define a media query with a maximum screen size constraint
+  @mixin max($res) {
+    @media (max-width: #{$res + px}) {
+      @content;
+    }
+  }
+  
+  // Define a media query with a minimum screen size constraint
+  @mixin min($res) {
+    @media (min-width: #{$res + px}) {
+      @content;
+    }
+  }
+  
