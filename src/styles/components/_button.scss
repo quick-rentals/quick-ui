@@ -1,0 +1,21 @@
+.techzia-ui-btn {
+    position: relative;
+    display: inline-flex !important;
+    align-items: center;
+    padding: 6px 8px;
+    gap: 4px;
+  
+    font-size: var(--neeto-ui-text-sm);
+    font-weight: var(--neeto-ui-font-medium);
+    line-height: 16px;
+    transition: var(--neeto-ui-transition);
+    border-radius: var(--neeto-ui-rounded);
+    border: none;
+  
+    outline: none;
+    user-select: none;
+    min-width: 0;
+    cursor: pointer;
+  
+    
+  }
