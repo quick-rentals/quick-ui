@@ -1,3 +1,3 @@
 import './styles/index.scss'
 
-export * from "./components/index.ts";
+export * from "./components";

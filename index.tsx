@@ -1,10 +1,10 @@
 import { StrictMode } from 'react';
 import * as ReactDOMClient from 'react-dom/client';
 
-import React from 'react';
+import React, {useContext} from 'react';
 
-// import {Button} from '@techziasln/quick-ui-test'
-import { Button } from './src'
+import {Button} from '@techziasln/quick-ui-test'
+
 const root = ReactDOMClient.createRoot(document.body);
 
 function App() {
