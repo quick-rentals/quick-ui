@@ -7,7 +7,7 @@ import typescript from '@rollup/plugin-typescript';
 
 export default [
   {
-    input: './index.ts',
+    input: 'src/index.ts',
     output: [
         {
             file: 'dist/index.cjs.js',
@@ -19,7 +19,7 @@ export default [
           },
       ],
     plugins: [resolve(), commonjs(), terser(),  scss(), typescript({
-        tsconfig: './tsconfig.json',
-      })],
+        tsconfig: 'tsconfig.json', // Path to your tsconfig.json file
+      }),],
   },
 ];

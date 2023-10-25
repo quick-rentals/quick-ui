@@ -1,6 +1,6 @@
 {
   "name": "@techziasln/quick-ui-test",
-  "version": "6.0.4",
+  "version": "7.0.2",
   "type": "module",
   "author": "techziasln",
   "main": "dist/index.cjs.js",
@@ -152,6 +152,6 @@
     "webpack-node-externals": "^3.0.0"
   },
   "dependencies": {
-    "@techziasln/quick-ui-test": "^6.0.2"
+    "@techziasln/quick-ui-test": "^7.0.2"
   }
 }

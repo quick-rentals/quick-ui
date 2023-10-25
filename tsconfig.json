@@ -1,47 +1,25 @@
 {
   "compilerOptions": {
-    "target": "ESNext",
+
+    "target": "ES5",
     "useDefineForClassFields": true,
     "lib": ["ES2020", "DOM", "DOM.Iterable"],
-    "module": "ESNext",
+    "module": "CommonJS",
     "skipLibCheck": true,
-
-    /* Bundler mode */
     "moduleResolution": "Node",
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "noEmit": true,
-    "jsx": "react-jsx",
+    "noEmit": false, // Change this to true if you want TypeScript to output JavaScript files
+    "jsx": "react",
     "esModuleInterop": true,
-    "sourceMap": true,
-
-    /* Linting */
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
-
     "declaration": true,
-    "outDir": "dist",
+    "outDir": "./dist"
   },
-  "include": ["src", "./index.ts"],
-  "exclude": ["node_modules", "dist"]
+  "include": ["src/**/*"],
+  "rootDirs": ["src"],
+  "references": [{ "path": "./tsconfig.node.json" }]
 }
-
-
-
-// {
-//   "compilerOptions": {
-//     "target": "ESNext",
-//     "module": "ESNext",
-//     "outDir": "./dist",
-//     "rootDir": "./src",
-//     "declaration": true,
-//     "declarationDir": "./dist",
-//     "strict": true,
-//     "esModuleInterop": true,
-// "jsx": "react-jsx",
-//   },
-//   "include": ["src", "./index.ts"],
-//   "exclude": ["node_modules", "dist"]
-// }

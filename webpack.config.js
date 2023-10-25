@@ -6,7 +6,7 @@ const host = process.env.HOST || 'localhost';
 export default {
   mode: 'development',
   devtool: 'inline-source-map',
-  entry: './src/index.tsx',
+  entry: './index.tsx',
   output: {
     filename: 'static/js/bundle.js',
   },

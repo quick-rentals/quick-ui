@@ -1,9 +1,7 @@
 import Button from "./Button";
-import '../styles/index.scss'
+import Input from './Input'
 
 export {
-  
-    Button
-  // Button related components
-
+    Button,
+    Input
 };
