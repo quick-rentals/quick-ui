@@ -1,19 +1,12 @@
 {
-  "name": "@techziasln/quick-ui",
-  "version": "1.0.5",
+  "name": "@techziasln/quick-ui-test",
+  "version": "5.0.1",
   "type": "module",
   "author": "techziasln",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
-  "exports": {
-    ".": {
-      "import": "./dist/index.es.js",
-      "require": "./dist/index.umd.js",
-      "types": "./dist/index.d.ts"
-    }
-  },
+  "module": "./lib/esm/index.js",
+  "main": "./lib/cjs/index.js",
   "files": [
-    "/dist"
+    "lib/"
   ],
   "publishConfig": {
     "access": "public"
@@ -152,6 +145,7 @@
     "@storybook/react": "^7.6.0-alpha.2",
     "@storybook/react-webpack5": "^7.6.0-alpha.2",
     "@storybook/testing-library": "^0.2.2",
+    "copyfiles": "^2.4.1",
     "dts-bundle-webpack": "^1.0.2",
     "storybook": "^7.6.0-alpha.2",
     "webpack": "^5.89.0",

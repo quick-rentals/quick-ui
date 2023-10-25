@@ -1,14 +1,16 @@
 import HtmlWebpackPlugin from 'html-webpack-plugin';
-
+import * as path from 'path'
 process.env.NODE_ENV = 'development';
 const host = process.env.HOST || 'localhost';
 
 export default {
-  mode: 'development',
+  mode: 'production',
   devtool: 'inline-source-map',
   entry: './src/index.tsx',
   output: {
-    filename: 'static/js/bundle.js',
+    path: path.resolve('dist'),
+    filename: 'index.js',
+    libraryTarget: 'commonjs2',
   },
   devServer: {
     compress: true,
