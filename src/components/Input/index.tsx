@@ -1,3 +1,5 @@
+import React from "react";
+
 interface InputProps {
   /**
    * Is this the principal call to action on the page?

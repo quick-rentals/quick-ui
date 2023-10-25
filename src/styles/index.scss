@@ -1,14 +1,21 @@
+
+// should move to helpers 
+@function rgb($args...) {
+    @return #{'rgb('}#{$args}#{')'};
+  }
+
+
 //Abstracts
 
 @import "./abstracts/mixins";
 @import "./abstracts/normalize";
 @import "./abstracts/variables";
 @import "./abstracts/root";
-
 @import "./abstracts/theme";
-
-
-@import "./components/button";
 
 //Base
 @import "./base/base";
+
+@import "./components/button";
+
+
