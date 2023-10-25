@@ -2,7 +2,7 @@ import React from "react";
 import classnames from "classnames";
 import { AnimatePresence, motion } from "framer-motion";
 // import PropTypes from "prop-types";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 // import { Spinner } from "atoms";
 // import Tooltip from "./Tooltip";
 
@@ -81,7 +81,7 @@ const Button = React.forwardRef<HTMLButtonElement | HTMLAnchorElement, ButtonPro
 
     if (!disabled) {
       if (to) {
-        Parent = Link;
+        // Parent = Link;
         elementSpecificProps = { to };
       } else if (href) {
         Parent = motion.a;

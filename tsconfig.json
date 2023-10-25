@@ -1,37 +1,47 @@
 {
-  
   "compilerOptions": {
-    "target": "es5",
-    "outDir": "./lib/esm",
-    "lib": ["dom", "DOM.Iterable", "ESNext"],
-    "importHelpers": true,
-    "declaration": true,
+    "target": "ESNext",
+    "useDefineForClassFields": true,
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    "skipLibCheck": true,
+
+    /* Bundler mode */
+    "moduleResolution": "Node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx",
+    "esModuleInterop": true,
     "sourceMap": true,
-    "rootDir": "./src",
+
+    /* Linting */
     "strict": true,
-    "noImplicitReturns": true,
-    "noFallthroughCasesInSwitch": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "moduleResolution": "node",
-    "jsx": "react",
-    "esModuleInterop": true,
-    "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true,
-    "allowJs": true,
-    "allowSyntheticDefaultImports": true,
-    "module": "ESNext",
-    "resolveJsonModule": true,
-    "isolatedModules": true ,
-    "noEmit": true,
-    "typeRoots": [
-      "index.d.ts",
-      "node_modules/@types"
-    ]
-  },
+    "noFallthroughCasesInSwitch": true,
 
-  "include": ["src"],
-  "exclude": [
-    "node_modules"
-  ],
+    "declaration": true,
+    "outDir": "dist",
+  },
+  "include": ["src", "./index.ts"],
+  "exclude": ["node_modules", "dist"]
 }
+
+
+
+// {
+//   "compilerOptions": {
+//     "target": "ESNext",
+//     "module": "ESNext",
+//     "outDir": "./dist",
+//     "rootDir": "./src",
+//     "declaration": true,
+//     "declarationDir": "./dist",
+//     "strict": true,
+//     "esModuleInterop": true,
+// "jsx": "react-jsx",
+//   },
+//   "include": ["src", "./index.ts"],
+//   "exclude": ["node_modules", "dist"]
+// }
