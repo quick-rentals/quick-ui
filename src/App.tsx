@@ -1,6 +1,6 @@
 
 import "./App.css";
-import { Button, Input } from "./components";
+import { Button } from "./components";
 
 function App() {
 

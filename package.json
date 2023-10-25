@@ -1,6 +1,6 @@
 {
-  "name": "quick-ui-test",
-  "version": "1.0.2",
+  "name": "@techziasln/quick-ui-test",
+  "version": "5.0.2",
   "type": "module",
   "author": "techziasln",
   "main": "dist/index.umd.js",
