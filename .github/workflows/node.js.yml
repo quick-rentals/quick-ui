@@ -32,9 +32,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Publish to NPM
-        run: |
-          echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > .npmrc
-          npm publish
-        env:
-          NPM_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
+     - name: Publish the package on NPM
+       uses: JS-DevTools/npm-publish@v1
+       with:
+          access: "public"
+          token: ${{ secrets.NPM_AUTH_TOKEN }}
