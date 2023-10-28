@@ -1,6 +1,6 @@
 {
   "name": "@techziasln/quick-ui-test",
-  "version": "10.0.1",
+  "version": "10.0.3",
   "type": "module",
   "author": "techziasln",
   "main": "dist/index.umd.js",
@@ -29,9 +29,6 @@
     "build-storybook": "storybook build",
     "prepare": "npm run build",
     "test": "jest"
-  },
-  "dependencies": {
-   
   },
   "devDependencies": {
     "@babel/core": "^7.23.2",
