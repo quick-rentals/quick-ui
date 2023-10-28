@@ -4,6 +4,11 @@ import dts from "vite-plugin-dts";
 import * as path from 'path'
 // https://vitejs.dev/config/
 export default defineConfig({
+  resolve: {
+    alias: {
+      src: path.resolve(__dirname, './src'), // Adjust the path as needed
+    },
+  },
   build: {
     lib: {
       entry: path.resolve(__dirname, "index.ts"),
