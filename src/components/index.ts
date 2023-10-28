@@ -1,8 +1,13 @@
 import Button from "./Button";
-// scss file imports
-import "../styles/index.scss";
-export {
-    Button
-  // Button related components
+import Label from "./Label";
+import Checkbox from "./Checkbox";
+import Card from "./Card";
 
+// scss file imports
+export {
+    Button,
+  // Button related components
+  Label,
+  Checkbox,
+  Card
 };

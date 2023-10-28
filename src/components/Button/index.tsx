@@ -1,9 +1,9 @@
 import React from "react";
 import classnames from "classnames";
 import { AnimatePresence, motion } from "framer-motion";
-// import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
-// import { Spinner } from "atoms";
+import { Spinner } from "src/atoms";  
+
 // import Tooltip from "./Tooltip";
 
 interface ButtonProps {
@@ -132,22 +132,17 @@ const Button = React.forwardRef<HTMLButtonElement | HTMLAnchorElement, ButtonPro
           <AnimatePresence mode='wait'>
             {icon ? (
               /* When Icon is present, animate between the icon and the spinner*/
-              // loading ? (
-              //   <Spinner
-              //     aria-hidden={true}
-              //     className="quick-ui-btn__spinner"
-              //     key="1"
-              //     size={16}
-              //   />
-              // ) : (
-              //   <Icon
-              //     aria-hidden={true}
-              //     className="quick-ui-btn__icon"
-              //     key="2"
-              //     size={iconSize}
-              //   />
-              // )
-              <></>
+              loading ? (
+                <Spinner
+                  aria-hidden={true}
+                  className="quick-ui-btn__spinner"
+                  key="1"
+                  size={16}
+                />
+              ) : (
+               <></>
+              )
+           
             ) : (
               /* When Icon is not present, animate the margin from 0 to the needed value*/
               loading && (
@@ -158,12 +153,12 @@ const Button = React.forwardRef<HTMLButtonElement | HTMLAnchorElement, ButtonPro
                   initial={{ width: 0, scale: 0 }}
                   transition={{ bounce: false }}
                 >
-                  {/* <Spinner
+                  <Spinner
                     aria-hidden={true}
                     className="neeto-ui-btn__spinner"
                     key="3"
                     size={16}
-                  /> */}
+                  />
                 </motion.div>
               )
             )}

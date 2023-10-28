@@ -1,0 +1,207 @@
+@mixin checkbox-styles-primary { 
+
+
+
+    &:not(:disabled) {
+        cursor: pointer;
+      }
+
+      &:hover:not(:disabled, :checked) {
+        border-color: rgb(var(--techzia-ui-primary-500));
+      }
+
+      &:checked {
+        border: none !important;
+      }
+
+      &:disabled {
+        opacity: 0.5;
+        cursor: not-allowed;
+      }
+
+      &:focus {
+        outline: transparent;
+      }
+
+      &:focus-visible {
+        outline: 3px solid rgba(var(--techzia-ui-primary-500), 50%);
+        outline-offset: 1px;
+        box-shadow: none;
+      }
+
+
+}
+
+
+
+
+
+.techzia-ui-checkbox__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-grow: 1;
+  
+    .techzia-ui-checkbox__container {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+  
+      .techzia-ui-label {
+        margin-left: 8px;
+      }
+
+      .techzia-ui-checkbox[type="checkbox"] {
+        width: 16px;
+        height: 16px;
+        color: rgb(var(--techzia-ui-primary-500));
+        border: 2px solid rgb(var(--techzia-ui-gray-400));
+        border-radius: var(--techzia-ui-rounded-sm);
+  
+        &:not(:disabled) {
+          cursor: pointer;
+        }
+  
+        &:hover:not(:disabled, :checked) {
+          border-color: rgb(var(--techzia-ui-gray-500));
+        }
+  
+        &:checked {
+          border: none !important;
+        }
+  
+        &:disabled {
+          opacity: 0.5;
+          cursor: not-allowed;
+        }
+  
+        &:focus {
+          outline: transparent;
+        }
+  
+        &:focus-visible {
+          outline: 3px solid rgba(var(--techzia-ui-primary-500), 50%);
+          outline-offset: 1px;
+          box-shadow: none;
+        }
+      }
+    }
+  }
+  .techzia-ui-checkbox__wrapper_primary {
+    display: flex;
+    -webkit-box-align: start;
+    align-items: flex-start;
+     box-sizing: border-box;
+    margin: 4px 0;
+    position: relative;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    outline: none;
+    font-size: 14px;
+    line-height: 1.5;
+    font-weight: 400;
+    color: #212121;
+    
+    
+  
+    .techzia-ui-checkbox__container_primary  {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+    
+      .techzia-ui-label {
+        margin-left: 8px;
+        cursor: pointer;
+      }
+  
+      .techzia-ui-checkbox_primary[type="checkbox"] {
+        width: 16px;
+        height: 16px;
+        border-radius: 6px;
+        border: 1px solid #a8a8a8;
+        color: rgb(var(--techzia-ui-primary-500));
+       
+        @include checkbox-styles-primary;
+      }
+
+      .techzia-ui-checkbox_primary--size-medium[type="checkbox"] {
+        width: 20px;
+        height: 20px;
+        border-radius: 6px;
+        border: 1px solid #a8a8a8;
+        color: rgb(var(--techzia-ui-primary-500));
+       
+        @include checkbox-styles-primary;
+      }
+    
+      .techzia-ui-checkbox_primary--size-large[type="checkbox"] {
+        width: 24px;
+        height: 24px;
+        border-radius: 6px;
+        border: 1px solid #a8a8a8;
+        color: rgb(var(--techzia-ui-primary-500));
+       
+        @include checkbox-styles-primary;
+      }
+      
+    }
+
+  }
+
+
+
+  
+  // ant design checkbox override
+  
+  .ant-checkbox{
+    width: 16px;
+    height: 16px;
+  
+    [type="checkbox"] {
+      width: 16px;
+      height: 16px;
+      color: rgb(var(--techzia-ui-primary-500));
+      border: 2px solid rgb(var(--techzia-ui-gray-400));
+      border-radius: var(--techzia-ui-rounded-sm);
+      opacity: 1;
+  
+      &:not(:disabled) {
+        cursor: pointer;
+      }
+  
+      &:hover:not(:disabled, :checked) {
+        border-color: rgb(var(--techzia-ui-gray-500));
+      }
+  
+      &:checked {
+        border: none !important;
+      }
+  
+      &:disabled {
+        opacity: 0.5;
+        cursor: not-allowed;
+      }
+  
+      &:focus {
+        outline: transparent;
+      }
+  
+      &:focus-visible {
+        outline: 3px solid rgba(var(--techzia-ui-primary-500), 50%);
+        outline-offset: 1px;
+        box-shadow: none;
+      }
+    }
+    .ant-checkbox-inner{
+      display: none;
+    }
+  }
+  
+  
+  

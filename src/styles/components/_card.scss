@@ -1,0 +1,21 @@
+.techzia-ui-card__wrapper {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-color: rgb(var(--techzia-ui-white));
+    border: 1px solid rgb(var(--techzia-ui-white));
+    border-radius: var(--techzia-ui-rounded-xl);
+    padding: 12px 12px;
+    cursor: pointer;
+
+    &:hover {
+        border-color: rgb(var(--techzia-ui-primary-500));
+    }
+
+
+}
+
+
+// &:hover:not(:disabled, :checked) {
+//     border-color: rgb(var(--techzia-ui-gray-500));
+//   }
